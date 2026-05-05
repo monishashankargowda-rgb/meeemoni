@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Certifications</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MyPortfolio.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="certifications.html">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-3">
+                        <button id="theme-toggle" aria-label="Toggle Theme">
+                            <i class="bi bi-moon-fill" id="theme-icon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-down">
+                <h2 class="display-5 fw-bold">My <span class="text-primary">Certifications</span></h2>
+                <div style="width: 60px; height: 4px; background: var(--accent-color); margin: 10px auto; border-radius: 2px;"></div>
+                <p class="lead mt-3">Professional training and certifications I have achieved.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Certificate 1 (Using provided PDF) -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="glass-card text-center p-4 h-100 d-flex flex-column align-items-center justify-content-center">
+                        <div class="mb-3 text-primary">
+                            <i class="bi bi-award display-1"></i>
+                        </div>
+                        <h4 class="mb-2">Full Stack Web Development</h4>
+                        <p class="text-muted small mb-3">Issued by: XYZ Academy</p>
+                        <p class="mb-4">Comprehensive bootcamp covering front-end and back-end web technologies.</p>
+                        <!-- Modal Trigger Button -->
+                        <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#certModal">
+                            <i class="bi bi-file-earmark-pdf"></i> View Certificate
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Placeholder for Future Certificate -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="glass-card text-center p-4 h-100 d-flex flex-column align-items-center justify-content-center border-dashed" style="border-style: dashed !important; border-width: 2px !important;">
+                        <div class="mb-3 text-secondary">
+                            <i class="bi bi-plus-circle display-1"></i>
+                        </div>
+                        <h4 class="mb-2 text-muted">More Coming Soon</h4>
+                        <p class="text-muted small mb-3">Currently pursuing new courses</p>
+                        <p class="mb-4 text-muted">Continuous learning to stay updated with industry trends.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Certificate Modal -->
+    <div class="modal fade" id="certModal" tabindex="-1" aria-labelledby="certModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content" style="background: var(--card-bg); border: 1px solid var(--glass-border);">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title" id="certModalLabel">Full Stack Web Development Certificate</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="filter: var(--bs-btn-close-color);"></button>
+                </div>
+                <div class="modal-body p-0" style="height: 80vh;">
+                    <iframe src="certificate.pdf" width="100%" height="100%" style="border: none;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Monisha. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
